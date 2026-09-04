@@ -1,0 +1,298 @@
+#riftbound iframe {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    background: #080808;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    align-self: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 5rem;
+    align-self: center;
+    margin: 0;
+}
+
+#site-header {
+    position: relative;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 40px;
+
+    background: rgba(8, 8, 8, 0.95);
+    border-top: 8px solid #2a6e32;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.top-bar-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.top-bar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar nav a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hero-header {
+    max-width: 850px;
+    width: calc(100% - 80px);
+    margin: 80px auto 0;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    box-sizing: border-box;
+}
+
+.hero-text {
+    margin: 0;
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin: 0 0 10px;
+
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.hero-text h2 {
+    margin: 0 0 10px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero-text p {
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+
+.hero-image {
+    width: 250px;
+    height: 350px;
+
+    object-fit: cover;
+    border-radius: 20px;
+
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -10%;
+
+    background-image:
+        linear-gradient(
+            45deg,
+            rgba(42, 110, 50, 0.65) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(42, 110, 50, 0.65) 75%
+        ),
+        linear-gradient(
+            45deg,
+            rgba(42, 110, 50, 0.65) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(42, 110, 50, 0.65) 75%
+        );
+
+    background-size: 120px 120px;
+    background-position: 0 0, 60px 60px;
+
+    z-index: -1;
+
+    animation: checker-wave 8s ease-in-out infinite alternate;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.20),
+            transparent 25%,
+            rgba(255, 255, 255, 0.04) 50%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.20)
+        );
+
+    background-size: 300% 100%;
+    animation: light-wave 7s ease-in-out infinite;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes checker-wave {
+    0% {
+        transform:
+            translate3d(-1%, 0, 0)
+            skewY(-1deg)
+            scale(1.05);
+    }
+
+    50% {
+        transform:
+            translate3d(1%, -0.5%, 0)
+            skewY(1deg)
+            scale(1.06);
+    }
+
+    100% {
+        transform:
+            translate3d(-0.5%, 0.5%, 0)
+            skewY(-0.5deg)
+            scale(1.05);
+    }
+}
+
+@keyframes light-wave {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+#riftbound, #losersout, #about {
+    max-width: 850px;
+    width: calc(100% - 80px);
+    margin: 80px auto;
+    padding: 40px;
+
+    background: rgba(8, 8, 8, 0.82);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+
+    box-sizing: border-box;
+}
+
+#riftbound {
+    margin-top: 0;
+}
+
+.project-media {
+    width: 100%;
+}
+
+.project-image-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    overflow: hidden;
+    border-radius: 14px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.project-image-button img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-image-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+}
+
+.project-image-button:hover .project-image-overlay {
+    opacity: 1;
+}
+
+.riftbound-game {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    border: none;
+    border-radius: 14px;
+
+    background: black;
+}
+
+.contact {
+    color: #7dcc83;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a.contact:hover {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
