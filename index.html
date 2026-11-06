@@ -22,99 +22,490 @@
     </div>
 
     <div class="hero-header">
-        <div class="hero-text">
-            <h1>Riley Stolarz</h1>
+        <img
+            class="hero-artwork"
+            src="images/RileyHero.png"
+            alt="Riley Stolarz leaning on a 3D nameplate"
+        >
 
-            <h2>Gameplay Engineer and Designer</h2>
+        <div class="hero-info">
+            <div class="hero-role">
+                <h2>Gameplay<br>Engineer &amp;<br>Designer</h2>
+            </div>
 
-            <p>
-                1st Year M.S. CS Game Development at USC
+            <p class="hero-education">
+                1st Year M.S. CS Game Development<br>
+                at <strong>USC</strong>
             </p>
         </div>
-
-        <img
-            class="hero-image"
-            src="images/RileyPhoto.png"
-            alt="Photo of Riley"
-        >
     </div>
-</header>
+    </header>
     <main>
+        <!-- PROJECTS -->
+
         <section id="projects">
-        <section id="riftbound">
-            <h2>Riftbound</h2>
-            <div class="project-media" id="riftbound-media">
-                <button
-                    class="project-image-button"
-                    id="riftbound-play"
-                    type="button"
-                    aria-label="Play Riftbound"
-                >
-                    <img
-                        src="images/RB_GameplayLoopSpeedUp.gif"
-                        alt="Riftbound gameplay"
+            <h2 class="projects-heading">Projects</h2>
+
+            <div class="project-grid">
+
+                <!-- #region RIFTBOUND -->
+
+                <article class="project-card" id="riftbound">
+
+                    <button
+                        class="project-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="riftbound-details"
                     >
+                        <div class="project-card-info">
+                            <div>
+                                <h3>Riftbound</h3>
+                                <p>Gameplay Programmer / Designer</p>
+                                <span class="project-meta">Godot · Undergrad Class Project</span>
+                            </div>
 
-                    <span class="project-image-overlay">
-                        ▶ Play Riftbound
-                    </span>
-                </button>
-            </div>
-            <p>
-                <em>Riftbound</em> is a 2D platforming roguelite prototype made in
-            Godot by a team of 7 for one of my game development classes. 
-            You play as a traveler stuck hopping between worlds tied together by rifts,
-            fighting enemies and collecting upgrades along the way. No two rifts are ever the same.
-            </p>
+                            <span class="project-chevron" aria-hidden="true">⌄</span>
+                        </div>
+                    </button>
 
-            <p>
-                This was my first time working on an actual game with a team, 
-                and I ended up getting my hands on a little bit of everything! 
-                I primarily worked on the gameplay side, building the player movement, camera, 
-                run system, and parts of the procedural level generation. I also helped with 
-                level design, UI, enemies, and whatever else needed fixing — including 
-                throwing together a final boss the night before our final presentation 😂
-                That final boss was an inside joke from the class, so don't expect to understand it if you get that far :)
-            </p>
-        </section>
-        <section id="losersout">
-            <h2>Loser's Out!</h2>
-            <a
-                class="project-image-button"
-                href="https://trial.stickypiston.co/map/losersout"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Play Loser's Out on StickyPiston"
-            >
-                <img
-                    src="images/losersout.webp"
-                    alt="Loser's Out main hub"
+                    <div class="project-showcase">
+
+                        <div class="project-media" id="riftbound-media">
+                            <button
+                                class="project-image-button"
+                                id="riftbound-play"
+                                type="button"
+                                aria-label="Play Riftbound"
+                            >
+                                <img
+                                    src="images/RB_GameplayLoopSpeedUp.gif"
+                                    alt="Riftbound gameplay"
+                                >
+
+                                <span class="project-image-overlay">
+                                    ▶ Play Riftbound
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="project-details" id="riftbound-details">
+                            <div class="project-details-inner">
+                                <div class="project-description">
+
+                                    <h4>About the Game</h4>
+
+                                    <p>
+                                        <em>Riftbound</em> is a 2D platforming
+                                        roguelite prototype made in Godot by
+                                        a team of 7 for one of my game
+                                        development classes.
+                                        You play as a traveler stuck hopping
+                                        between worlds tied together by rifts,
+                                        fighting enemies and collecting
+                                        upgrades along the way.
+                                        No two rifts are ever the same.
+                                    </p>
+
+                                    <h4>My Contributions</h4>
+
+                                    <p>
+                                        This was my first time working on an
+                                        actual game with a team, and I ended
+                                        up getting my hands on a little bit
+                                        of everything!
+                                    </p>
+
+                                    <p>
+                                        I primarily worked on the gameplay
+                                        side, building the player movement,
+                                        camera, run system, and parts of the
+                                        procedural level generation.
+                                        I also helped with level design,
+                                        UI, enemies, and whatever else
+                                        needed fixing — including throwing
+                                        together a final boss the night
+                                        before our final presentation 😂
+                                    </p>
+
+                                    <p>
+                                        That final boss was an inside joke
+                                        from the class, so don't expect to
+                                        understand it if you get that far :)
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+                <!-- #endregion -->
+
+                <!-- #region LOSER'S OUT -->
+
+                <article class="project-card" id="losersout">
+
+                    <button
+                        class="project-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="losersout-details"
+                    >
+                        <div class="project-card-info">
+                            <div>
+                                <h3>Loser's Out!</h3>
+                                <p>Game Designer / Builder</p>
+                                <span class="project-meta">Minecraft · Game Jam</span>
+                            </div>
+
+                            <span class="project-chevron" aria-hidden="true">⌄</span>
+                        </div>
+                    </button>
+
+                    <div class="project-showcase">
+
+                        <div class="project-media">
+                            <a
+                                class="project-image-button"
+                                href="https://trial.stickypiston.co/map/losersout"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Play Loser's Out on StickyPiston"
+                            >
+                                <img
+                                    src="images/losersout.webp"
+                                    alt="Loser's Out main hub"
+                                >
+
+                                <span class="project-image-overlay">
+                                    ▶ Play Loser's Out
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="project-details" id="losersout-details">
+                            <div class="project-details-inner">
+                                <div class="project-description">
+
+                                    <h4>About the Game</h4>
+
+                                    <p>
+                                        <em>Loser's Out!</em> is an automated
+                                        Minecraft gameshow made as a love
+                                        letter to the niche Minecraft
+                                        gameshow community I was part of.
+                                    </p>
+
+                                    <p>
+                                        The concept is simple: compete in
+                                        a series of minigames, don't come
+                                        in last, and be the last player
+                                        standing!
+                                        The twist? Almost everything is
+                                        randomized — the games you play,
+                                        the order you play them in, and
+                                        even the obstacles you'll
+                                        encounter within them!
+                                    </p>
+
+                                    <p>
+                                        This was the result of a week-long
+                                        game jam using Minecraft as a base.
+                                        Did I mention it was made in
+                                        Minecraft?
+                                    </p>
+
+                                    <h4>My Contributions</h4>
+
+                                    <p>
+                                        The project started from my original
+                                        concept, and I did a lot of the
+                                        design work that turned it into
+                                        the final game.
+                                    </p>
+
+                                    <p>
+                                        I designed and built roughly 30%
+                                        of the minigames, built the main
+                                        hub, and helped plan out many of
+                                        the other games and systems.
+                                        I also contributed some programming,
+                                        but my biggest role was figuring
+                                        out what games we should make and,
+                                        more importantly, how to make them
+                                        fun in such a complicated format.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- #endregion -->
+
+                <!-- #region CRESCENDOZE -->
+                <article class="project-card" id="crescendoze">
+
+                <button
+                    class="project-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="crescendoze-details"
                 >
+                    <div class="project-card-info">
+                        <div>
+                            <h3>Crescendoze</h3>
+                            <p>Game Designer</p>
+                            <span class="project-meta">Unity · USC Open Alpha C14</span>
+                            <span class="project-status">In Development</span>
+                        </div>
 
-                <span class="project-image-overlay">
-                    ▶ Play Loser's Out
-                </span>
-            </a>
-            <p>
-                <em>Loser's Out!</em> is an automated Minecraft gameshow made as a 
-                love letter to the niche Minecraft gameshow community I was part of. 
-                The concept is simple: compete in a series of minigames, don't come in last,
-                and be the last player standing! The twist? Almost everything is randomized 
-                — the games you play, the order you play them in, and even the obstacles you'll 
-                encounter within them! This was the result of a week-long game jam using Minecraft
-                as a base. Did I mention it was made in Minecraft?
-            </p>
+                        <span class="project-chevron" aria-hidden="true">⌄</span>
+                    </div>
+                </button>
 
-            <p>
-                The project started from my original concept, and I did a lot of the design 
-                work that turned it into the final game. I designed and built roughly 30% 
-                of the minigames, built the main hub (as seen in the screenshot!), and helped 
-                plan out many of the other games and systems. I also contributed some programming, 
-                but my biggest role was figuring out what games we should make and, more importantly, 
-                how to make them fun in such a complicated format.
-            </p>
+                <div class="project-showcase">
+
+                    <div class="project-media">
+                        <div class="project-image-button">
+                            <img
+                                src="images/crescendoze.jpg"
+                                alt="Crescendoze temp (there is no screenshot!!!)"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="project-details" id="crescendoze-details">
+                        <div class="project-details-inner">
+                            <div class="project-description">
+
+                                <h4>About the Game</h4>
+                                <p>
+                                    <em>Crescendoze</em> is a dark comedy murder mystery cleaning game 
+                                    where you play as a member of a five-person bossa nova band 
+                                    living under one roof. After a wild party celebrating the band's 
+                                    1st anniversary, you wake up to a trashed house and discover 
+                                    that one of your roommates is dead. Threatened into keeping quiet
+                                    by an anonymous source, you must continue cleaning before the band's "investors"
+                                    arrive later that day. But as you tidy up the house, you begin uncovering clues that
+                                    help you piece together what really happened the night before...
+                                </p>
+
+                                <h4>My Contributions</h4>
+                                <p>
+                                    As part of the cohort's design team, I contributed extensively to the game's narrative,
+                                    helping develop major plot points, character motivations, and the overarching
+                                    murder mystery. My most notable contribution was designing and writing the game's finale, 
+                                    bringing together clues and story elements into a cohesive resolution. 
+                                    During this process, I also coined the term Crescendoze for an object central to the mystery, 
+                                    which ultimately became the game's title.
+                                </p>
+                                <p>
+                                    Beyond narrative design, I also conceptualized a slingshot-based Roomba cleaning minigame
+                                    that made it into the final game, and contributed to the design of the game's other
+                                    puzzles and level layout.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </article>
+                <!-- #endregion -->
+            
+                <!-- #region REMFALL -->
+                <article class="project-card" id="remfall">
+
+                <button
+                    class="project-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="remfall-details"
+                >
+                    <div class="project-card-info">
+                        <div>
+                            <h3>Remfall</h3>
+                            <p>Network / Usability Engineer</p>
+                            <span class="project-meta">Unity / USC MFA 2026-2027</span>
+                            <span class="project-status">In Development</span>
+                        </div>
+
+                        <span class="project-chevron" aria-hidden="true">⌄</span>
+                    </div>
+                </button>
+
+                <div class="project-showcase">
+
+                    <div class="project-media">
+                        <div class="project-image-button">
+                            <img
+                                src="images/remfall.jpg"
+                                alt="Remfall temp (I'll update this later, low resolution)"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="project-details" id="remfall-details">
+                        <div class="project-details-inner">
+                            <div class="project-description">
+
+                                <h4>About the Game</h4>
+                                <p>
+                                    Remfall is a 3D two-player co-op adventure where two creatures 
+                                    with broken, colorless wings awaken on a muted and lifeless planet 
+                                    after a fall. Together, they must work to find their way back to the 
+                                    sky by restoring the world's vitality through painting and synchronized movement. 
+                                </p>
+                                <h4>My Contributions</h4>
+                                <p>
+                                    I joined Remfall as a Network / Usability Engineer for the 2026-2027 development
+                                    cycle. In this role, I work alongside the engineering team to develop and refine the
+                                    game's multiplayer systems and player-facing features in Unity.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </article>
+                <!-- #endregion -->
+            
+                <!-- #region FRAME OF MIND -->
+                <!--
+                <article class="project-card" id="PROJECT-ID">
+
+                <button
+                    class="project-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="PROJECT-ID-details"
+                >
+                    <div class="project-card-info">
+                        <div>
+                            <h3>PROJECT NAME</h3>
+                            <p>YOUR ROLE</p>
+                            <span class="project-meta">ENGINE / PROJECT CONTEXT</span>
+                        </div>
+
+                        <span class="project-chevron" aria-hidden="true">⌄</span>
+                    </div>
+                </button>
+
+                <div class="project-showcase">
+
+                    <div class="project-media">
+                        <a
+                            class="project-image-button"
+                            href="PROJECT-LINK"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View PROJECT NAME"
+                        >
+                            <img
+                                src="images/PROJECT-IMAGE.png"
+                                alt="PROJECT NAME screenshot"
+                            >
+
+                            <span class="project-image-overlay">
+                                ▶ View Project
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="project-details" id="PROJECT-ID-details">
+                        <div class="project-details-inner">
+                            <div class="project-description">
+
+                                <p>
+                                    PROJECT DESCRIPTION
+                                </p>
+
+                                <p>
+                                    YOUR CONTRIBUTIONS / EXPERIENCE
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </article>
+                -->
+                <!-- #endregion -->
+            
+                <!-- #region TEMPLATE PROJECT -->
+                <!--
+                <article class="project-card" id="PROJECT-ID">
+
+                <button
+                    class="project-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="PROJECT-ID-details"
+                >
+                    <div class="project-card-info">
+                        <div>
+                            <h3>PROJECT NAME</h3>
+                            <p>YOUR ROLE</p>
+                            <span class="project-meta">ENGINE / PROJECT CONTEXT</span>
+                        </div>
+
+                        <span class="project-chevron" aria-hidden="true">⌄</span>
+                    </div>
+                </button>
+
+                <div class="project-showcase">
+
+                    <div class="project-media">
+                        <a
+                            class="project-image-button"
+                            href="PROJECT-LINK"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View PROJECT NAME"
+                        >
+                            <img
+                                src="images/PROJECT-IMAGE.png"
+                                alt="PROJECT NAME screenshot"
+                            >
+
+                            <span class="project-image-overlay">
+                                ▶ View Project
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="project-details" id="PROJECT-ID-details">
+                        <div class="project-details-inner">
+                            <div class="project-description">
+
+                                <p>
+                                    PROJECT DESCRIPTION
+                                </p>
+
+                                <p>
+                                    YOUR CONTRIBUTIONS / EXPERIENCE
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </article>
+                -->
+                <!-- #endregion -->
+            
+            </div>
         </section>
-        </section>
+
+        <!-- #region ABOUT -->
+        
         <section id="about">
             <h2>About Me</h2>
             <p>Hi, I'm Riley!!! I'm a game developer and programmer born and raised
@@ -172,10 +563,6 @@
             </div>
         </div>
                </p> 
-                
-                
-                
-                
             <p>    
                 If you want to get in touch, feel free to contact me on discord 
                 <span class="contact">@RileyDStroyer</span>,
@@ -185,6 +572,8 @@
                 work too!
             </p>
         </section>
+        <!-- #endregion -->
+    
     </main>
     <script src="script.js"></script>
 </body>
