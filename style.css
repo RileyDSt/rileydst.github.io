@@ -197,8 +197,9 @@ body::after {
 
 .hero-education {
     margin: 2cqw 0 0 2.45cqw;
-    font-size: 2cqw;
-    line-height: 1.5;
+    font-size: 1.65cqw;
+    line-height: 1.35;
+    white-space: nowrap;
 }
 
 .hero-education strong {
@@ -651,6 +652,26 @@ a.contact:hover {
 
     .project-image-button img {
         height: 150px;
+    }
+
+    .top-bar {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .top-bar-name {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+    .top-bar nav {
+        gap: 14px;
+        flex-shrink: 0;
+    }
+
+    .top-bar nav a {
+        font-size: 0.85rem;
+        white-space: nowrap;
     }
 
 }
